@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="center_flex" id="main_div">
+    <h class="header_box" id="Title">Calculator</h>
+  </div>
+  <br /><br />
+  <div class="centre_wrapper" id="Out_wrapper">
+    <input type="text" readonly class="display_output" id="output_displayer" />
+  </div>
+  <br />
+  <div class="centre_wrapper">
+    <div class="number_grid_container">
+      <button id="CE_reset" class="side_button_two_one" value="reset"
+        onclick="addOperation(document.getElementById('CE_reset').value)">
+        CE
+      </button>
+      <button id="backspace" class="side_button_two_two" onclick="popV()">
+        <- </button>
+          <button id="seven_b" class="grid_item" value="7" onclick="pushV(document.getElementById('seven_b').value)">
+            7
+          </button>
+          <button id="eight_b" class="grid_item" value="8" onclick="pushV(document.getElementById('eight_b').value)">
+            8
+          </button>
+          <button id="nine_b" class="grid_item" value="9" onclick="pushV(document.getElementById('nine_b').value)">
+            9
+          </button>
+          <button id="Adder" class="side_button" value="+"
+            onclick="addOperation(document.getElementById('Adder').value)">
+            +
+          </button>
+          <button id="four_b" class="grid_item" value="4" onclick="pushV(document.getElementById('four_b').value)">
+            4
+          </button>
+          <button id="five_b" class="grid_item" value="5" onclick="pushV(document.getElementById('five_b').value)">
+            5
+          </button>
+          <button id="six_b" class="grid_item" value="6" onclick="pushV(document.getElementById('six_b').value)">
+            6
+          </button>
+          <button id="Multiplier" class="side_button" value="*"
+            onclick="addOperation(document.getElementById('Multiplier').value)">
+            *
+          </button>
+          <button id="one_b" class="grid_item" value="1" onclick="pushV(document.getElementById('one_b').value)">
+            1
+          </button>
+          <button id="two_b" class="grid_item" value="2" onclick="pushV(document.getElementById('two_b').value)">
+            2
+          </button>
+          <button id="three_b" class="grid_item" value="3" onclick="pushV(document.getElementById('three_b').value)">
+            3
+          </button>
+          <button id="subtractor" class="side_button" value="-"
+            onclick="addOperation(document.getElementById('subtractor').value)">
+            -
+          </button>
+          <button id="zero_b" class="grid_item" value="0" onclick="pushV(document.getElementById('zero_b').value)">
+            0
+          </button>
+          <button id="equal" class="side_button_three" value="=" onclick="exec()">
+            =
+          </button>
+          <button id="divider" class="grid_item" value="/"
+            onclick="addOperation(document.getElementById('divider').value)">
+            /
+          </button>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>

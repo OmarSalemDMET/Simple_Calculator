@@ -1,0 +1,73 @@
+.center_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_box {
+  padding: auto;
+  border-style: dotted;
+  width: 1920px;
+  text-align: center;
+  font-size: 100px;
+  font-stretch: narrower;
+}
+
+.centre_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.number_grid_container {
+  width: 800px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+  gap: 10px 10px;
+}
+
+.grid_item {
+  padding: 50px;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.display_output {
+  padding: 10px;
+  width: 790px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  border-style: dashed;
+  border-width: 8px;
+  border-color: rgb(0, 0, 0);
+}
+
+.side_button {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.side_button_three {
+  font-size: 50px;
+  font-weight: bold;
+  grid-column: 2 / span 2;
+  grid-row: 5;
+}
+
+.side_button_two_one {
+  font-size: 50px;
+  font-weight: bold;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.side_button_two_two {
+  font-size: 50px;
+  font-weight: bold;
+  grid-column-start: 3;
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
